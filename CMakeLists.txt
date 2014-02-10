@@ -1,6 +1,9 @@
 cmake_minimum_required (VERSION 2.6)
 project (ParticleFilter)
 
+set(BUILD_TYPE Release)
+add_definitions("-fPIC")
+
 add_library(${PROJECT_NAME}
 	map/map.c
 	map/map_cspace.cpp
